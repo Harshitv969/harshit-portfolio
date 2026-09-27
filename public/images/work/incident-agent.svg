@@ -1,0 +1,74 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <radialGradient id="iaGlow" cx="20%" cy="15%" r="60%">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="iaGrid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#ffffff" stroke-opacity="0.045" stroke-width="1"/>
+    </pattern>
+    <marker id="iaArrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#c2a4ff"/>
+    </marker>
+  </defs>
+
+  <rect width="800" height="450" fill="#0d0b12"/>
+  <rect width="800" height="450" fill="url(#iaGrid)"/>
+  <rect width="800" height="450" fill="url(#iaGlow)"/>
+
+  <text x="60" y="56" fill="#ffffff" font-size="22" font-weight="700">AI Incident Resolution Agent</text>
+  <text x="60" y="78" fill="#a89fbd" font-size="13" letter-spacing="1">RETRIEVAL + TOOL CALLING · HUMAN-APPROVED ACTIONS</text>
+
+  <!-- step 1: alert -->
+  <g transform="translate(110,240)">
+    <circle r="44" fill="#ffffff" fill-opacity="0.04" stroke="#e2b23c" stroke-opacity="0.6" stroke-width="1.5"/>
+    <path d="M0,-16 L14,10 H-14 Z" fill="none" stroke="#e2b23c" stroke-width="2.4" stroke-linejoin="round"/>
+    <line x1="0" y1="-6" x2="0" y2="2" stroke="#e2b23c" stroke-width="2.4"/>
+    <circle cx="0" cy="7" r="1.6" fill="#e2b23c"/>
+    <text x="0" y="66" text-anchor="middle" fill="#8b8794" font-size="11" letter-spacing="1">INCIDENT</text>
+  </g>
+
+  <path d="M156,240 H210" fill="none" stroke="#c2a4ff" stroke-width="2" stroke-dasharray="5,6" marker-end="url(#iaArrow)"/>
+
+  <!-- step 2: logs / retrieval -->
+  <g transform="translate(268,240)">
+    <rect x="-46" y="-40" width="92" height="80" rx="12" fill="#ffffff" fill-opacity="0.04" stroke="#ffffff" stroke-opacity="0.12"/>
+    <line x1="-30" y1="-18" x2="30" y2="-18" stroke="#ffffff" stroke-opacity="0.3" stroke-width="2.5"/>
+    <line x1="-30" y1="-2" x2="20" y2="-2" stroke="#ffffff" stroke-opacity="0.22" stroke-width="2.5"/>
+    <line x1="-30" y1="14" x2="26" y2="14" stroke="#ffffff" stroke-opacity="0.22" stroke-width="2.5"/>
+    <text x="0" y="62" text-anchor="middle" fill="#8b8794" font-size="11" letter-spacing="1">LOGS &amp; SOPs</text>
+  </g>
+
+  <path d="M320,240 H374" fill="none" stroke="#c2a4ff" stroke-width="2" stroke-dasharray="5,6" marker-end="url(#iaArrow)"/>
+
+  <!-- step 3: AI analysis -->
+  <g transform="translate(432,240)">
+    <rect x="-40" y="-40" width="80" height="80" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#c2a4ff" stroke-opacity="0.6" stroke-width="1.5"/>
+    <rect x="-20" y="-20" width="40" height="40" rx="8" fill="#a78bfa" fill-opacity="0.35"/>
+    <circle cx="0" cy="0" r="6" fill="#ffffff" fill-opacity="0.5"/>
+    <text x="0" y="62" text-anchor="middle" fill="#8b8794" font-size="11" letter-spacing="1">AI ANALYSIS</text>
+  </g>
+
+  <path d="M480,240 H534" fill="none" stroke="#c2a4ff" stroke-width="2" stroke-dasharray="5,6" marker-end="url(#iaArrow)"/>
+
+  <!-- step 4: recommendation -->
+  <g transform="translate(592,240)">
+    <rect x="-44" y="-38" width="88" height="76" rx="12" fill="#ffffff" fill-opacity="0.04" stroke="#ffffff" stroke-opacity="0.12"/>
+    <path d="M-18,0 l12,12 l24,-26" fill="none" stroke="#7fe0b0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="0" y="60" text-anchor="middle" fill="#8b8794" font-size="11" letter-spacing="1">RESOLUTION</text>
+  </g>
+
+  <path d="M640,240 H694" fill="none" stroke="#c2a4ff" stroke-width="2" stroke-dasharray="5,6" marker-end="url(#iaArrow)"/>
+
+  <!-- step 5: human approval -->
+  <g transform="translate(735,240)">
+    <circle r="34" fill="#ffffff" fill-opacity="0.04" stroke="#ffffff" stroke-opacity="0.15"/>
+    <circle cx="0" cy="-8" r="9" fill="none" stroke="#ffffff" stroke-opacity="0.55" stroke-width="2.2"/>
+    <path d="M-13,16 a13,13 0 0 1 26,0" fill="none" stroke="#ffffff" stroke-opacity="0.55" stroke-width="2.2"/>
+    <text x="0" y="56" text-anchor="middle" fill="#8b8794" font-size="10.5" letter-spacing="0.5">APPROVAL</text>
+  </g>
+
+  <g transform="translate(0,360)">
+    <text x="60" y="0" fill="#6f6b78" font-size="11" letter-spacing="1" font-weight="500">90%+ RESOLUTION ACCURACY · 2–3s AVERAGE LATENCY · PYTHON · OPENAI API</text>
+  </g>
+</svg>

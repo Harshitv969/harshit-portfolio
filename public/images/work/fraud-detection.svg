@@ -1,0 +1,70 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <radialGradient id="fdGlow" cx="15%" cy="15%" r="60%">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="fdGrid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#ffffff" stroke-opacity="0.045" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="450" fill="#0d0b12"/>
+  <rect width="800" height="450" fill="url(#fdGrid)"/>
+  <rect width="800" height="450" fill="url(#fdGlow)"/>
+
+  <text x="60" y="56" fill="#ffffff" font-size="22" font-weight="700">Fraud &amp; Anomaly Detection</text>
+  <text x="60" y="78" fill="#a89fbd" font-size="13" letter-spacing="1">TRANSACTION MONITORING · RISK SCORING</text>
+
+  <!-- transaction stream -->
+  <g transform="translate(60,140)">
+    <rect x="0" y="0" width="440" height="220" rx="14" fill="#ffffff" fill-opacity="0.04" stroke="#ffffff" stroke-opacity="0.1"/>
+    <text x="20" y="28" fill="#c7c2d6" font-size="11" letter-spacing="1" font-weight="700">LIVE TRANSACTION STREAM</text>
+
+    <g>
+      <circle cx="40" cy="60" r="7" fill="#a78bfa" fill-opacity="0.55"/>
+      <circle cx="80" cy="60" r="7" fill="#a78bfa" fill-opacity="0.55"/>
+      <circle cx="120" cy="60" r="7" fill="#a78bfa" fill-opacity="0.55"/>
+      <circle cx="160" cy="60" r="9" fill="#e2647a"/>
+      <circle cx="200" cy="60" r="7" fill="#a78bfa" fill-opacity="0.55"/>
+      <circle cx="240" cy="60" r="7" fill="#a78bfa" fill-opacity="0.55"/>
+      <circle cx="280" cy="60" r="7" fill="#a78bfa" fill-opacity="0.55"/>
+      <circle cx="320" cy="60" r="7" fill="#a78bfa" fill-opacity="0.55"/>
+      <circle cx="360" cy="60" r="7" fill="#a78bfa" fill-opacity="0.55"/>
+      <circle cx="400" cy="60" r="7" fill="#a78bfa" fill-opacity="0.55"/>
+
+      <circle cx="60" cy="100" r="7" fill="#a78bfa" fill-opacity="0.55"/>
+      <circle cx="100" cy="100" r="7" fill="#a78bfa" fill-opacity="0.55"/>
+      <circle cx="140" cy="100" r="7" fill="#a78bfa" fill-opacity="0.55"/>
+      <circle cx="180" cy="100" r="7" fill="#a78bfa" fill-opacity="0.55"/>
+      <circle cx="220" cy="100" r="7" fill="#a78bfa" fill-opacity="0.55"/>
+      <circle cx="260" cy="100" r="7" fill="#a78bfa" fill-opacity="0.55"/>
+      <circle cx="300" cy="100" r="9" fill="#e2647a"/>
+      <circle cx="340" cy="100" r="7" fill="#a78bfa" fill-opacity="0.55"/>
+      <circle cx="380" cy="100" r="7" fill="#a78bfa" fill-opacity="0.55"/>
+
+      <!-- flag on first anomaly -->
+      <g transform="translate(160,60)">
+        <line x1="0" y1="0" x2="0" y2="-38" stroke="#e2647a" stroke-width="2"/>
+        <path d="M0,-38 L26,-30 L0,-22 Z" fill="#e2647a"/>
+      </g>
+      <text x="160" y="150" text-anchor="middle" fill="#e2647a" font-size="10.5" letter-spacing="1" font-weight="700">ALERT</text>
+    </g>
+
+    <line x1="20" y1="176" x2="420" y2="176" stroke="#ffffff" stroke-opacity="0.08"/>
+    <text x="20" y="200" fill="#8b8794" font-size="10.5" letter-spacing="1">CLASS-IMBALANCE HANDLING · ANOMALY DETECTION</text>
+  </g>
+
+  <!-- risk gauge -->
+  <g transform="translate(600,220)">
+    <path d="M-90,10 A90,90 0 0 1 90,10" fill="none" stroke="#ffffff" stroke-opacity="0.1" stroke-width="16"/>
+    <path d="M-90,10 A90,90 0 0 1 30,-86" fill="none" stroke="#a78bfa" stroke-width="16"/>
+    <path d="M30,-86 A90,90 0 0 1 90,10" fill="none" stroke="#e2647a" stroke-width="16"/>
+    <line x1="0" y1="10" x2="46" y2="-58" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="0" cy="10" r="6" fill="#ffffff"/>
+    <text x="0" y="46" text-anchor="middle" fill="#8b8794" font-size="11" letter-spacing="1">RISK SCORE</text>
+    <text x="0" y="70" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="700">72 / 100</text>
+  </g>
+
+  <text x="60" y="400" fill="#6f6b78" font-size="11" letter-spacing="1" font-weight="500">PYTHON · SQL · MACHINE LEARNING · 90%+ RECALL</text>
+</svg>

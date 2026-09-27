@@ -1,0 +1,89 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <radialGradient id="bkGlow" cx="85%" cy="15%" r="60%">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="bkGrid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#ffffff" stroke-opacity="0.045" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="450" fill="#0d0b12"/>
+  <rect width="800" height="450" fill="url(#bkGrid)"/>
+  <rect width="800" height="450" fill="url(#bkGlow)"/>
+
+  <text x="60" y="60" fill="#ffffff" font-size="22" font-weight="700">Scalable Booking System</text>
+  <text x="60" y="82" fill="#a89fbd" font-size="13" letter-spacing="1">REAL-TIME AVAILABILITY · ZERO DOUBLE-BOOKINGS</text>
+
+  <!-- Calendar grid -->
+  <g transform="translate(60,120)">
+    <rect x="0" y="0" width="460" height="260" rx="16" fill="#ffffff" fill-opacity="0.04" stroke="#ffffff" stroke-opacity="0.1"/>
+    <!-- day labels -->
+    <g fill="#8b8794" font-size="11" letter-spacing="1">
+      <text x="35" y="28" text-anchor="middle">MON</text>
+      <text x="100" y="28" text-anchor="middle">TUE</text>
+      <text x="165" y="28" text-anchor="middle">WED</text>
+      <text x="230" y="28" text-anchor="middle">THU</text>
+      <text x="295" y="28" text-anchor="middle">FRI</text>
+      <text x="360" y="28" text-anchor="middle">SAT</text>
+      <text x="425" y="28" text-anchor="middle">SUN</text>
+    </g>
+    <!-- grid cells 7x3 -->
+    <g>
+      <!-- generate manually -->
+      <!-- row 1 -->
+      <rect x="10" y="42" width="50" height="50" rx="8" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.08"/>
+      <rect x="75" y="42" width="50" height="50" rx="8" fill="#a78bfa" fill-opacity="0.35" stroke="#c2a4ff" stroke-opacity="0.5"/>
+      <rect x="140" y="42" width="50" height="50" rx="8" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.08"/>
+      <rect x="205" y="42" width="50" height="50" rx="8" fill="#a78bfa" fill-opacity="0.35" stroke="#c2a4ff" stroke-opacity="0.5"/>
+      <rect x="270" y="42" width="50" height="50" rx="8" fill="#a78bfa" fill-opacity="0.35" stroke="#c2a4ff" stroke-opacity="0.5"/>
+      <rect x="335" y="42" width="50" height="50" rx="8" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.08"/>
+      <rect x="400" y="42" width="50" height="50" rx="8" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.08"/>
+      <!-- row 2 -->
+      <rect x="10" y="102" width="50" height="50" rx="8" fill="#a78bfa" fill-opacity="0.35" stroke="#c2a4ff" stroke-opacity="0.5"/>
+      <rect x="75" y="102" width="50" height="50" rx="8" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.08"/>
+      <rect x="140" y="102" width="50" height="50" rx="8" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.08"/>
+      <rect x="205" y="102" width="50" height="50" rx="8" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.08"/>
+      <rect x="270" y="102" width="50" height="50" rx="8" fill="#a78bfa" fill-opacity="0.35" stroke="#c2a4ff" stroke-opacity="0.5"/>
+      <rect x="335" y="102" width="50" height="50" rx="8" fill="#a78bfa" fill-opacity="0.35" stroke="#c2a4ff" stroke-opacity="0.5"/>
+      <rect x="400" y="102" width="50" height="50" rx="8" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.08"/>
+      <!-- row 3, one cell glowing = locked/pending -->
+      <rect x="10" y="162" width="50" height="50" rx="8" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.08"/>
+      <rect x="75" y="162" width="50" height="50" rx="8" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.08"/>
+      <rect x="140" y="162" width="50" height="50" rx="8" fill="#fff" fill-opacity="0.09" stroke="#c2a4ff" stroke-width="2"/>
+      <rect x="205" y="162" width="50" height="50" rx="8" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.08"/>
+      <rect x="270" y="162" width="50" height="50" rx="8" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.08"/>
+      <rect x="335" y="162" width="50" height="50" rx="8" fill="#a78bfa" fill-opacity="0.35" stroke="#c2a4ff" stroke-opacity="0.5"/>
+      <rect x="400" y="162" width="50" height="50" rx="8" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.08"/>
+      <!-- lock icon on the highlighted pending cell -->
+      <g transform="translate(165,187)">
+        <rect x="-8" y="-1" width="16" height="12" rx="2.5" fill="#c2a4ff"/>
+        <path d="M-5,-1 v-4 a5,5 0 0 1 10,0 v4" fill="none" stroke="#c2a4ff" stroke-width="2.2"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Legend / side panel -->
+  <g transform="translate(560,130)">
+    <rect x="0" y="0" width="180" height="240" rx="14" fill="#ffffff" fill-opacity="0.04" stroke="#ffffff" stroke-opacity="0.1"/>
+    <text x="18" y="32" fill="#ffffff" font-size="13" font-weight="700">Redis Redlock</text>
+    <text x="18" y="52" fill="#8b8794" font-size="11">Distributed locking</text>
+
+    <circle cx="24" cy="86" r="6" fill="#a78bfa" fill-opacity="0.6"/>
+    <text x="40" y="90" fill="#c7c2d6" font-size="12">Booked</text>
+
+    <rect x="18" y="106" width="12" height="12" rx="3" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.15"/>
+    <text x="40" y="116" fill="#c7c2d6" font-size="12">Available</text>
+
+    <rect x="18" y="132" width="12" height="12" rx="3" fill="#fff" fill-opacity="0.12" stroke="#c2a4ff" stroke-width="1.5"/>
+    <text x="40" y="142" fill="#c7c2d6" font-size="12">Locking…</text>
+
+    <line x1="18" y1="164" x2="162" y2="164" stroke="#ffffff" stroke-opacity="0.08"/>
+    <text x="18" y="188" fill="#ffffff" font-size="13" font-weight="700">1,000+ req/s</text>
+    <text x="18" y="206" fill="#8b8794" font-size="11">Zero overselling</text>
+    <text x="18" y="224" fill="#8b8794" font-size="11">Dynamic pricing engine</text>
+  </g>
+
+  <text x="60" y="410" fill="#6f6b78" font-size="11" letter-spacing="1" font-weight="500">PYTHON · FASTAPI · POSTGRESQL · DOCKER</text>
+</svg>

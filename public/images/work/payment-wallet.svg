@@ -1,0 +1,69 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <radialGradient id="pwGlow" cx="80%" cy="10%" r="60%">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="pwGrid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#ffffff" stroke-opacity="0.045" stroke-width="1"/>
+    </pattern>
+    <marker id="pwArrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#c2a4ff"/>
+    </marker>
+  </defs>
+
+  <rect width="800" height="450" fill="#0d0b12"/>
+  <rect width="800" height="450" fill="url(#pwGrid)"/>
+  <rect width="800" height="450" fill="url(#pwGlow)"/>
+
+  <!-- Ledger node (center) -->
+  <g transform="translate(400,190)">
+    <rect x="-95" y="-58" width="190" height="116" rx="16" fill="#ffffff" fill-opacity="0.05" stroke="#c2a4ff" stroke-opacity="0.5" stroke-width="1.5"/>
+    <text x="0" y="-22" text-anchor="middle" fill="#e9e3f5" font-size="15" font-weight="700" letter-spacing="0.5">LEDGER</text>
+    <rect x="-65" y="-6" width="130" height="10" rx="5" fill="#a78bfa" fill-opacity="0.35"/>
+    <rect x="-65" y="10" width="90" height="10" rx="5" fill="#ffffff" fill-opacity="0.15"/>
+    <!-- lock icon: saga consistency -->
+    <g transform="translate(55,32)">
+      <rect x="-9" y="-2" width="18" height="14" rx="3" fill="#c2a4ff"/>
+      <path d="M-6,-2 v-5 a6,6 0 0 1 12,0 v5" fill="none" stroke="#c2a4ff" stroke-width="2.4"/>
+    </g>
+  </g>
+
+  <!-- Wallet A -->
+  <g transform="translate(140,190)">
+    <circle r="56" fill="#ffffff" fill-opacity="0.04" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1.5"/>
+    <text x="0" y="-6" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700">WALLET A</text>
+    <text x="0" y="16" text-anchor="middle" fill="#a78bfa" font-size="13" font-weight="600">£4,208.00</text>
+  </g>
+
+  <!-- Wallet B -->
+  <g transform="translate(660,190)">
+    <circle r="56" fill="#ffffff" fill-opacity="0.04" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1.5"/>
+    <text x="0" y="-6" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700">WALLET B</text>
+    <text x="0" y="16" text-anchor="middle" fill="#a78bfa" font-size="13" font-weight="600">£1,952.00</text>
+  </g>
+
+  <!-- flows -->
+  <path d="M196,190 H300" fill="none" stroke="#c2a4ff" stroke-width="2" stroke-dasharray="5,6" marker-end="url(#pwArrow)"/>
+  <path d="M500,190 H604" fill="none" stroke="#c2a4ff" stroke-width="2" stroke-dasharray="5,6" marker-end="url(#pwArrow)"/>
+
+  <!-- Kafka event stream -->
+  <g transform="translate(0,330)" opacity="0.85">
+    <line x1="60" y1="20" x2="740" y2="20" stroke="#ffffff" stroke-opacity="0.1"/>
+    <text x="60" y="0" fill="#8b8794" font-size="11" letter-spacing="1.5" font-weight="600">EVENT STREAM · KAFKA</text>
+    <circle cx="120" cy="20" r="4" fill="#a78bfa"/>
+    <circle cx="210" cy="20" r="4" fill="#a78bfa"/>
+    <circle cx="300" cy="20" r="4" fill="#a78bfa"/>
+    <circle cx="390" cy="20" r="4" fill="#ffffff" fill-opacity="0.4"/>
+    <circle cx="480" cy="20" r="4" fill="#a78bfa"/>
+    <circle cx="570" cy="20" r="4" fill="#ffffff" fill-opacity="0.4"/>
+    <circle cx="660" cy="20" r="4" fill="#a78bfa"/>
+  </g>
+
+  <g transform="translate(0,375)">
+    <text x="60" y="0" fill="#6f6b78" font-size="11" letter-spacing="1" font-weight="500">ACID · POSTGRESQL SHARDS · REDIS LOCKING · SAGA TRANSACTIONS</text>
+  </g>
+
+  <text x="60" y="60" fill="#ffffff" font-size="22" font-weight="700">Distributed Payment Wallet</text>
+  <text x="60" y="82" fill="#a89fbd" font-size="13" letter-spacing="1">PEER-TO-PEER TRANSFERS · ZERO BALANCE MISMATCHES</text>
+</svg>
