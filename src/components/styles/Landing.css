@@ -106,8 +106,8 @@
   opacity: 0;
 }
 .character-model {
-  height: 80%;
-  height: 80vh;
+  height: 45%;
+  height: 45vh;
   position: absolute;
   max-width: 1920px;
   max-height: 1080px;
@@ -115,7 +115,7 @@
   width: 100%;
   left: 50%;
   z-index: 0;
-  bottom: 50px;
+  bottom: 0;
   pointer-events: inherit;
 }
 .character-model::after {
@@ -195,8 +195,8 @@
   position: absolute;
   right: 50%;
   transform: translateX(50%);
-  bottom: 40px;
-  top: inherit;
+  top: 34%;
+  bottom: auto;
   z-index: 20;
 }
 .landing-info h3 {
@@ -227,7 +227,7 @@
 h2.landing-info-h2 {
   color: #c481ff;
   font-size: 42px;
-  width: 120%;
+  width: 100%;
   margin: 0;
   font-family: "Geist", sans-serif;
   font-weight: 600;
@@ -278,7 +278,7 @@ h2.landing-info-h2 {
 }
 @media screen and (min-width: 768px) {
   .character-model {
-    height: 80vh;
+    height: 45vh;
   }
   .landing-intro h2 {
     font-size: 25px;
@@ -307,6 +307,9 @@ h2.landing-info-h2 {
     width: 48%;
     left: 0;
     transform: none;
+  }
+  h2.landing-info-h2 {
+    width: 120%;
   }
   .character-model::after,
   .character-model::before {
